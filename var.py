@@ -1,5 +1,14 @@
 global ui
 global dlgSlr
+global precio
+global confianza
+global tipoCocina
+
+
+
+
+
+
 global chkPago
 global dlgCalendar
 global pay

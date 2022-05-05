@@ -1,3 +1,4 @@
+import events
 import var
 import ventanaRest
 import windowaviso
@@ -10,6 +11,10 @@ class Main(QtWidgets.QMainWindow):
         super(Main, self).__init__()
         var.ui = ventanaRest.Ui_Proxecto1()
         var.ui.setupUi(self)
+
+        var.ui.elegirPrecio.buttonClicked.connect(events.selPrecio)
+        var.ui.elegirConfianza.buttonClicked.connect(events.selConfianza)
+        var.ui.tipoCocina.activated[str].connect(events.selTipoCocina)
 
 
 
