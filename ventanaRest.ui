@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Proxecto1</class>
+ <widget class="QMainWindow" name="Proxecto1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>799</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Proxecto1</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#C9D5B5</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>821</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="tabInsertar">
+     <attribute name="title">
+      <string>Insertar/ Modificar</string>
+     </attribute>
+     <widget class="QPushButton" name="altaRest">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>410</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guardar</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../RecomendacionsRestaurantes/guardar.jpg</normaloff>../RecomendacionsRestaurantes/guardar.jpg</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonSalir">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>410</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Salir</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../RecomendacionsRestaurantes/salir.jpg</normaloff>../RecomendacionsRestaurantes/salir.jpg</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modificar">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>410</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Modificar</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../RecomendacionsRestaurantes/modificar.png</normaloff>../RecomendacionsRestaurantes/modificar.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="eliminar">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>410</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Eliminar</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../RecomendacionsRestaurantes/eliminar.png</normaloff>../RecomendacionsRestaurantes/eliminar.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="limpiar">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>410</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Limpiar</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../RecomendacionsRestaurantes/refresh.png</normaloff>../RecomendacionsRestaurantes/refresh.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mensajes">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>470</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="telefonoLabel">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>350</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Teléfono: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="tipoCocina">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>130</y>
+        <width>291</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Tradicional</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fusión</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Alta cocina</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Asiática</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Italiana</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mexicana</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="titulo">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>-40</y>
+        <width>491</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>SimSun-ExtB</family>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Recomendaciones de Restaurantes</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="logo">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>241</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../RecomendacionsRestaurantes/rest2.png</normaloff>../RecomendacionsRestaurantes/rest2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nombre_2">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>90</y>
+        <width>231</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="confianzaLabel">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>250</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Confianza en su criterio: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nombreLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>90</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Nombre del restaurante: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="recomienda">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>210</y>
+        <width>291</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="direccionLabel">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>350</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Dirección: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="recomiendaLabel">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>210</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;¿Quién lo recomienda?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="tipoCocinaLabel">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>130</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Tipo de cocina: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="confBaja">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>250</y>
+        <width>72</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Baja</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">elegirConfianza</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="confMedia">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>250</y>
+        <width>72</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Media</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">elegirConfianza</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="confAlta">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>250</y>
+        <width>72</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Alta</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">elegirConfianza</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="confAbsoluta">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>250</y>
+        <width>72</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Absoluta</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">elegirConfianza</string>
+      </attribute>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>300</y>
+        <width>651</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="direccion_2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>350</y>
+        <width>231</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="telefono">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>350</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="precioLabel">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>170</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Nivel de precio: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="precioBarato">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>170</y>
+        <width>72</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Barato</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">elegirPrecio</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="precioMedio">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>170</y>
+        <width>72</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Medio</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">elegirPrecio</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="precioCaro">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>170</y>
+        <width>72</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Caro</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">elegirPrecio</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="precioMuyCaro">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>170</y>
+        <width>72</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Muy caro</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">elegirPrecio</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="buscar">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>80</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../InterfazPython1/lupa.jpg</normaloff>../InterfazPython1/lupa.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabBuscar">
+     <attribute name="title">
+      <string>Buscar</string>
+     </attribute>
+     <widget class="QPushButton" name="buscarNombre">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>20</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../InterfazPython1/lupa.jpg</normaloff>../InterfazPython1/lupa.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tablaRestaurantes">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>180</y>
+        <width>791</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>false</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Tipo</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Precio</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Recomendador</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Confianza</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Dirección</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Teléfono</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="logo_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>161</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../RecomendacionsRestaurantes/rest2.png</normaloff>../RecomendacionsRestaurantes/rest2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nombreLabel2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Buscar por nombre: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nombre2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>30</y>
+        <width>271</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="tipoLabel2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Buscar por tipo: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="tipoCocina2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>70</y>
+        <width>271</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="recomendadorLabel2">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>110</y>
+        <width>181</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Buscar por recomendador: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buscarTipo">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>60</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../InterfazPython1/lupa.jpg</normaloff>../InterfazPython1/lupa.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buscarRecomendador">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>100</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../InterfazPython1/lupa.jpg</normaloff>../InterfazPython1/lupa.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="recomendador2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>110</y>
+        <width>271</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabProductos">
+     <attribute name="title">
+      <string>Productos</string>
+     </attribute>
+     <widget class="QCheckBox" name="chkTransferencia_3">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>200</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Transferencia</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chkTarjeta_3">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>200</y>
+        <width>70</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tarjeta</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chkEfectivo_3">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>200</y>
+        <width>70</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Efectivo</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="fechaAlta">
+      <property name="geometry">
+       <rect>
+        <x>842</x>
+        <y>80</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="dni">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>80</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="apellidos">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>110</y>
+        <width>301</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nombreLabel">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>110</y>
+        <width>58</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Nombre: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nombre">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>110</y>
+        <width>291</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="metodosPagoLabel">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>170</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Métodos de pago: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="apellidosLabel">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>110</y>
+        <width>67</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Apellidos: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="direccionLabl">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>140</y>
+        <width>67</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Dirección: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="sexo">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>170</y>
+        <width>102</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Sexo: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="fecha">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>70</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normalon>../InterfazPython1/calendario.png</normalon>
+       </iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="direccion">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>140</y>
+        <width>301</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>70</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fechaLabel">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>80</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Fecha Alta: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="femenino">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>290</y>
+        <width>72</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Femenino</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="masculino">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>400</y>
+        <width>71</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Masculino</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="status">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>506</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>799</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="separator"/>
+    <addaction name="salir"/>
+   </widget>
+   <widget class="QMenu" name="menuHerramientas">
+    <property name="title">
+     <string>Herramientas</string>
+    </property>
+    <addaction name="actionCrear_Backup"/>
+    <addaction name="actionRecuperar_Backup"/>
+    <addaction name="separator"/>
+    <addaction name="actionImportar_Excel"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuHerramientas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="salir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="toolbarSalir">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../InterfazPython1/salir.qrc">
+     <normaloff>:/newPrefix/salir.jpg</normaloff>:/newPrefix/salir.jpg</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="toolbarAbrir">
+   <property name="icon">
+    <iconset resource="../InterfazPython1/abrir.qrc">
+     <normaloff>:/newPrefix/carpeta.png</normaloff>:/newPrefix/carpeta.png</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="toolbarComprimir">
+   <property name="icon">
+    <iconset resource="../InterfazPython1/comprimir.qrc">
+     <normaloff>:/newPrefix/comprimir.jpg</normaloff>:/newPrefix/comprimir.jpg</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionCrear_Backup">
+   <property name="text">
+    <string>Crear Backup</string>
+   </property>
+  </action>
+  <action name="actionRecuperar_Backup">
+   <property name="text">
+    <string>Recuperar Backup</string>
+   </property>
+  </action>
+  <action name="actionImportar_Excel">
+   <property name="text">
+    <string>Importar desde Excel</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../InterfazPython1/salir.qrc"/>
+  <include location="../InterfazPython1/comprimir.qrc"/>
+  <include location="../InterfazPython1/abrir.qrc"/>
+ </resources>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="elegirPrecio"/>
+  <buttongroup name="elegirConfianza"/>
+ </buttongroups>
+</ui>
