@@ -4,7 +4,7 @@ global precio
 global confianza
 
 tipoCocina ="Tradicional"
-
+tipoCocina2="Tradicional"
 
 global filedb
 global filedlgabrir

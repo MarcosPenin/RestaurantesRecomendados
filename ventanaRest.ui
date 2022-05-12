@@ -23,7 +23,7 @@
       <x>0</x>
       <y>0</y>
       <width>821</width>
-      <height>551</height>
+      <height>561</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -713,7 +713,7 @@
         <x>0</x>
         <y>180</y>
         <width>791</width>
-        <height>311</height>
+        <height>291</height>
        </rect>
       </property>
       <property name="layoutDirection">
@@ -934,6 +934,36 @@
         <height>21</height>
        </rect>
       </property>
+      <item>
+       <property name="text">
+        <string>Tradicional</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fusión</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Alta cocina</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Asiática</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Italiana</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mexicana</string>
+       </property>
+      </item>
      </widget>
      <widget class="QLabel" name="recomendadorLabel2">
       <property name="geometry">
@@ -1025,59 +1055,49 @@
        </rect>
       </property>
      </widget>
-    </widget>
-    <widget class="QWidget" name="tabProductos">
-     <attribute name="title">
-      <string>Productos</string>
-     </attribute>
-     <widget class="QLineEdit" name="fechaAlta">
+     <widget class="QLabel" name="mensajes2">
       <property name="geometry">
        <rect>
-        <x>842</x>
-        <y>80</y>
-        <width>81</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="fecha">
-      <property name="geometry">
-       <rect>
-        <x>940</x>
-        <y>70</y>
-        <width>31</width>
+        <x>80</x>
+        <y>480</y>
+        <width>271</width>
         <height>31</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
       <property name="text">
        <string/>
       </property>
-      <property name="icon">
-       <iconset>
-        <normalon>../InterfazPython1/calendario.png</normalon>
-       </iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>25</width>
-        <height>25</height>
-       </size>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLabel" name="label">
+     <widget class="QPushButton" name="verTodo">
       <property name="geometry">
        <rect>
-        <x>380</x>
-        <y>70</y>
-        <width>41</width>
+        <x>550</x>
+        <y>480</y>
+        <width>161</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text">
-       <string/>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
-      <property name="textFormat">
-       <enum>Qt::RichText</enum>
+      <property name="text">
+       <string>VER TODOS</string>
       </property>
      </widget>
     </widget>
@@ -1121,6 +1141,7 @@
     <addaction name="actionRecuperar_Backup"/>
     <addaction name="separator"/>
     <addaction name="actionImportar_Excel"/>
+    <addaction name="actionGenerar_Informe"/>
    </widget>
    <addaction name="menuArchivo"/>
    <addaction name="menuHerramientas"/>
@@ -1184,6 +1205,11 @@
     <string>Importar desde Excel</string>
    </property>
   </action>
+  <action name="actionGenerar_Informe">
+   <property name="text">
+    <string>Generar Informe</string>
+   </property>
+  </action>
  </widget>
  <resources>
   <include location="../InterfazPython1/salir.qrc"/>
@@ -1192,7 +1218,7 @@
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="elegirPrecio"/>
   <buttongroup name="elegirConfianza"/>
+  <buttongroup name="elegirPrecio"/>
  </buttongroups>
 </ui>
